@@ -1,6 +1,5 @@
 'use strict';
 
-
 module.exports = function(grunt) {
 	
 	// Configurable paths for the application

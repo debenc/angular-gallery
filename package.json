@@ -1,0 +1,9 @@
+{
+  "name": "angular-photogallery",
+  "version": "1.0.0",
+  "description": "Angy",
+  "main": "app.js",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

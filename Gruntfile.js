@@ -5,6 +5,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-livereload');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
@@ -44,12 +45,38 @@ module.exports = function(grunt) {
 			less: {
 				files: ['<%= config.app %>/**/*.less'],
 				tasks: ['less:tmp']
+			},
+			html: {
+				files: ['<%= config.app %>/**/*.html'],
+				options: {
+					livereload: true
+				}
+			},
+			js: {
+				files: ['<%= config.app %>/**/*.js', '*.js'],
+				options: {
+					livereload: true
+				}
+			},
+			gruntfile: {
+				files: ['Gruntfile.js']
+			},
+			livereload: {
+				options: {
+					livereload: '<%= connect.options.livereload %>'
+				},
+				files: [
+					'<%= config.app %>/{,*/}*.html',
+					'.tmp/assets/styles/{,*/}*.css',
+					'<%= config.app %>/assets/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+					'<%= config.app %>/*.js'
+				]
 			}
 		},
 		connect: {
 			options: {
 				port: 9000,
-				hostname: '0.0.0.0',
+				hostname: 'localhost',
 				livereload: 35729
 			},
 			livereload: {

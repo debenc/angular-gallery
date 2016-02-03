@@ -1,1 +1,1 @@
-# angular-photogallery
+# angular-gallery

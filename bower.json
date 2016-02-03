@@ -1,5 +1,5 @@
 {
-  "name": "AngularPhotogallery",
+  "name": "AngularGallery",
   "version": "0.0.1",
   "dependencies": {
     "angular": "1.4.9",

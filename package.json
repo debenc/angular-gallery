@@ -1,14 +1,15 @@
 {
-  "name": "angular-photogallery",
+  "name": "angular-gallery",
   "version": "0.0.1",
-  "description": "Angy",
+  "description": "Simple gallery app for displaying photo portfolio",
   "main": "app.js",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-connect": "^0.11.2",
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-less": "^1.2.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-contrib-connect": "^0.11.2"
+    "grunt-contrib-livereload": "^0.1.2",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }

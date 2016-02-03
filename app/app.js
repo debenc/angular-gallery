@@ -1,15 +1,16 @@
 (function(){
 	'use strict';
 
-	angular.module('AngularPhotogallery', [
+	angular.module('AngularGallery', [
 		'ngAnimate',
 		'ui.router',
 		'hmTouchEvents',
 
 		// components
+		'component.hero',
 
 		// states
-		'login',
+		'states.recent',
 
 	]);
 

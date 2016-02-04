@@ -1,1 +1,4 @@
-<p>{{vm.pero}}</p>
+
+	<div ng-repeat="photo in vm.photos" class="photo-container">
+		<img ng-src="{{photo.url}}"></img>
+	</div>

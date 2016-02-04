@@ -14,8 +14,9 @@
 	</head>
 <body id="AngularGallery">
 
-		<div ui-view="header"></div>		
-		<div ui-view="content"></div>
+		<div ui-view="header"></div>
+		<div ui-view="navbar"></div>
+		<div ui-view="content" id="content"></div>
 		<div ui-view="footer"></div>
 
 
@@ -43,6 +44,13 @@
 		<script type="text/javascript" src="components/hero/app.js"></script>
 		<script type="text/javascript" src="components/hero/hero-static/hero-static.directive.js"></script>
 		<script type="text/javascript" src="components/hero/hero-static/hero-static.controller.js"></script>
+
+		<script type="text/javascript" src="components/navbar/app.js"></script>
+		<script type="text/javascript" src="components/navbar/navbar.directive.js"></script>
+		<script type="text/javascript" src="components/navbar/navbar.controller.js"></script>
+
+		<script type="text/javascript" src="components/datasource/app.js"></script>
+		<script type="text/javascript" src="components/datasource/datasource.service.js"></script>
 
 	<!-- STATES -->
 		<script type="text/javascript" src="states/recent/app.js"></script>

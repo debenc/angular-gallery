@@ -11,6 +11,9 @@
 				'header@' : {
 					template: '<hero-static></hero-static>'
 				},
+				'navbar@' : {
+					template: '<navbar></navbar>'
+				},
 				'content@' : {
 					templateUrl: 'states/recent/recent.html',
 					controller: 'RecentController',

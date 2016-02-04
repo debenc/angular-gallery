@@ -1,9 +1,117 @@
-/* MAIN LESS */
+// Main Less 
 
-.klasa {
-	display: none;
+@import "normalize.less";
+@import "variables.less";
+@import "helpers.less";
+
+* {
+	box-sizing: border-box;
 }
-.pero {
+
+html, body {
+	min-height: 100%;
+	height: auto;
+	position: relative;
+	padding: 0;
+	overflow: auto;
+}
+
+h1 {
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+.hero-container {
+	width: @w100;
+	height: @offset;
+	position: fixed;
+	top: 0;
+	text-align: center;
+	background: url('../images/header.jpg') no-repeat;
+	background-size: cover;
+	background-position: 20%;
+	z-index: 0;
+	& > h1 {
+		color: @white;
+		margin: 120px 0 10px 0;
+	}
+	& > h3 {
+		color: @grey-light;
+		margin: 10px 0;
+	}
+}
+
+navbar {
 	display: block;
-	color: red;
+	position: relative;
+	width: @w100;
+	margin-top: @offset;
+	height: 50px;
+	vertical-align: middle;
+	background: @white-dark;
+	z-index: 2;
+	& > a {
+		display: inline-block;
+		width: 50%;
+		/*width: 40%;*/
+		padding: 16px 0;
+		font-size: @fs14;
+		color: @grey-light;
+		text-align: center;
+		text-decoration: none;
+		border-bottom: 2px solid @grey-lighter;
+		transition: border .15s ease, color .15s ease;
+		will-change: border, color;
+		/*&:last-child {
+			width: 20%;
+		}*/
+		&:active, &.active, &:focus, &:hover {
+			border-bottom-color: @blue;
+			color: @blue;
+		}
+	}
+}
+
+#content {
+	display: block;
+	width: @w100;
+	position: relative;
+	background: @white;
+	z-index: 1;
+	height: 100%;
+	min-height: 100%;
+	overflow: auto;
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+
+
+.stick-it {
+	position: fixed;
+	top: 0;
+	margin: 0;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05)
+}
+
+.photo-container {
+	width: 100%;
+	margin: 5px;
+	position: relative;
+	float: left;
+	& > img {
+		width: 100%;
+	}
 }

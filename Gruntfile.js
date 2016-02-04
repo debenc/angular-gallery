@@ -58,6 +58,12 @@ module.exports = function(grunt) {
 					livereload: true
 				}
 			},
+			img: {
+				files: ['<%= config.app %>/**/*.jpg', '*.jpg'],
+				options: {
+					livereload: true
+				}
+			},
 			gruntfile: {
 				files: ['Gruntfile.js']
 			},

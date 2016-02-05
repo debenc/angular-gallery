@@ -48,11 +48,10 @@ h3 {
 	}
 }
 
-navbar {
+.navbar {
 	display: block;
 	position: relative;
 	width: @w100;
-	margin-top: @offset;
 	height: 50px;
 	vertical-align: middle;
 	background: @white-dark;
@@ -60,7 +59,6 @@ navbar {
 	& > a {
 		display: inline-block;
 		width: 50%;
-		/*width: 40%;*/
 		padding: 16px 0;
 		font-size: @fs14;
 		color: @grey-light;
@@ -69,12 +67,17 @@ navbar {
 		border-bottom: 2px solid @grey-lighter;
 		transition: border .15s ease, color .15s ease;
 		will-change: border, color;
-		/*&:last-child {
-			width: 20%;
-		}*/
 		&:active, &.active, &:focus, &:hover {
 			border-bottom-color: @blue;
 			color: @blue;
+		}
+	}
+	&.stick-it {
+		position: fixed;
+		top: 0;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+		& + .content-wrapper {
+			margin-top: 55px;
 		}
 	}
 }
@@ -82,36 +85,37 @@ navbar {
 #content {
 	display: block;
 	width: @w100;
+	margin-top: @offset;
 	position: relative;
 	background: @white;
 	z-index: 1;
 	height: 100%;
 	min-height: 100%;
 	overflow: auto;
-	&:before {
-		content: " ";
-		display: table;
-	}
-	&:after {
-		clear: both;
-	}
 }
 
-
-
-.stick-it {
-	position: fixed;
-	top: 0;
-	margin: 0;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05)
+.content-wrapper {
+	margin-top: 5px;
 }
 
 .photo-container {
 	width: 100%;
-	margin: 5px;
+	padding: 5px 10px;
 	position: relative;
 	float: left;
 	& > img {
 		width: 100%;
+	}
+}
+
+#content, .navbar, .hero-container, .content-wrapper {
+	&:before {
+		content: " ";
+		display: table;
+	}
+	&::after {
+		content: " ";
+		display: block;
+		clear: both;
 	}
 }

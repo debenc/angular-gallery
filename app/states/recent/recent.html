@@ -1,4 +1,7 @@
-
-	<div ng-repeat="photo in vm.photos" class="photo-container">
-		<img ng-src="{{photo.url}}"></img>
+	<navbar></navbar>
+	
+	<div class="content-wrapper">
+		<div ng-repeat="photo in vm.photos" class="photo-container">
+			<img ng-src="{{photo.url}}"></img>
+		</div>
 	</div>

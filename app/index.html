@@ -14,9 +14,9 @@
 	</head>
 <body id="AngularGallery">
 
-		<div ui-view="header"></div>		
+		<header ui-view="header"></header>		
 		<div ui-view="content" id="content"></div>
-		<div ui-view="footer"></div>
+		<footer ui-view="footercmp"></footer>
 
 
 <!-- VENDOR JS DEV // build: js/vendor.min.js -->
@@ -47,6 +47,9 @@
 		<script type="text/javascript" src="components/navbar/app.js"></script>
 		<script type="text/javascript" src="components/navbar/navbar.directive.js"></script>
 
+		<script type="text/javascript" src="components/footercmp/app.js"></script>
+		<script type="text/javascript" src="components/footercmp/footercmp.directive.js"></script>
+
 		<script type="text/javascript" src="components/datasource/app.js"></script>
 		<script type="text/javascript" src="components/datasource/datasource.service.js"></script>
 
@@ -54,6 +57,10 @@
 		<script type="text/javascript" src="states/recent/app.js"></script>
 		<script type="text/javascript" src="states/recent/config.js"></script>
 		<script type="text/javascript" src="states/recent/recent.controller.js"></script>
+
+		<script type="text/javascript" src="states/albums/app.js"></script>
+		<script type="text/javascript" src="states/albums/config.js"></script>
+		<script type="text/javascript" src="states/albums/albums.controller.js"></script>
 
 </body>
 </html>

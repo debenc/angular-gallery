@@ -1,19 +1,19 @@
 (function(){
 	'use strict';
 
-	angular.module('states.recent')
+	angular.module('states.albums')
 
 	.config(function($stateProvider){
 
-		$stateProvider.state('recent', {
-			url: '/recent',
+		$stateProvider.state('albums', {
+			url: '/albums',
 			views: {
 				'header@' : {
 					template: '<hero-static></hero-static>'
 				},
 				'content@' : {
-					templateUrl: 'states/recent/recent.html',
-					controller: 'RecentController',
+					templateUrl: 'states/albums/albums.html',
+					controller: 'AlbumsController',
 					controllerAs: 'vm'
 				},
 				'footercmp@' : {

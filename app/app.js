@@ -10,10 +10,12 @@
 		// components
 		'component.hero',
 		'component.navbar',
+		'component.footercmp',
 		'component.datasource',
 
 		// states
 		'states.recent',
+		'states.albums'
 
 	]);
 

@@ -1,7 +1,7 @@
 (function(){
 'use strict';
 
-	angular.module('states.recent').controller('RecentController', function($state, fireSource) {
+	angular.module('states.albums').controller('AlbumsController', function($state, fireSource) {
 
 		var vm = this;
 
@@ -10,7 +10,7 @@
 		});
 */
 		
-		vm.photos = fireSource.getFakePhotos();
+		vm.albums = fireSource.getFakeGalleries();
 		
 	});
 

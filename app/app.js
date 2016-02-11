@@ -12,10 +12,12 @@
 		'component.navbar',
 		'component.footercmp',
 		'component.datasource',
+		'component.viewer',
 
 		// states
 		'states.recent',
-		'states.galleries'
+		'states.galleries',
+		'states.gallery'
 
 	]);
 

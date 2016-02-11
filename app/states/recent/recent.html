@@ -1,8 +1,8 @@
 <navbar></navbar>
 
 <div class="content-wrapper">
-	<div ng-repeat="photo in vm.photos | limitTo: 4 | orderBy: 'date'" class="photo-container">
+	<div ng-repeat="photo in vm.photos | orderBy: 'date'" class="photo-container">
 		<!-- <div>{{photo.date}}</div> -->
-		<img ng-src="{{photo.url}}"></img>
+		<img ng-src="{{photo.url}}" ng-click="vm.openViewer()"></img>
 	</div>
 </div>

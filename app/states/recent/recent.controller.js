@@ -1,13 +1,17 @@
 (function(){
 'use strict';
 
-	angular.module('states.recent').controller('RecentController', function($state, fireSource) {
+	angular.module('states.recent').controller('RecentController', function($state, $filter, dataSource, photoViewer) {
 
 		var vm = this;
 
-		fireSource.getPhotos().$loaded(function(response) {
-			vm.photos = response;
+		dataSource.getPhotos().$loaded(function(response) {
+			vm.photos = $filter('limitTo')(response, 4);
 		});
+
+		vm.openViewer = function() {
+			photoViewer.initViewer(vm.photos);
+		};
 		
 	});
 

@@ -15,7 +15,7 @@
 
 		// states
 		'states.recent',
-		'states.albums'
+		'states.galleries'
 
 	]);
 

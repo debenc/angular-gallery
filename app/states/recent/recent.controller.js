@@ -5,12 +5,9 @@
 
 		var vm = this;
 
-/*		fireSource.get().$loaded(function(response) {
-			console.log(response);
+		fireSource.getPhotos().$loaded(function(response) {
+			vm.photos = response;
 		});
-*/
-		
-		vm.photos = fireSource.getFakePhotos();
 		
 	});
 

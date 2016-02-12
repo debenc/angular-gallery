@@ -1,4 +1,4 @@
-(function(){
+(function() {
 'use strict';
 
 	angular.module('states.recent').controller('RecentController', function($state, $filter, dataSource, photoViewer) {

@@ -1,4 +1,4 @@
-(function(){
+(function() {
 'use strict';
 
 	angular.module('states.gallery').controller('GalleryController', function($state, dataSource) {
@@ -10,8 +10,6 @@
 			/*vm.galleries = response;*/
 
 		});
-
-
 		
 	});
 

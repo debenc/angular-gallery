@@ -1,4 +1,4 @@
-(function(){
+(function() {
 'use strict';
 
 	angular.module('states.galleries').controller('GalleriesController', function($state, dataSource) {

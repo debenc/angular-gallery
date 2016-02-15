@@ -12,7 +12,7 @@
 				$document.on('scroll', function () {					
 					var scrollAmount = $document.scrollTop();					
 					scope.$apply(function() {
-						scope.scrollIt = scrollAmount >= 220 ? true : false;		
+						scope.scrollIt = scrollAmount >= 300 ? true : false;		
 					});
 				});
 			}

@@ -1,5 +1,5 @@
 // Main Less 
-
+/*@import url(https://fonts.googleapis.com/css?family=Play:400,700);*/
 @import "normalize.less";
 @import "variables.less";
 @import "helpers.less";
@@ -14,6 +14,7 @@ html, body {
 	position: relative;
 	padding: 0;
 	overflow: auto;
+	font-family: @fontfamily;
 }
 
 h1 {
@@ -33,18 +34,24 @@ h3 {
 	height: @offset;
 	position: fixed;
 	top: 0;
-	text-align: center;
-	background: url('../images/header.jpg') no-repeat;
+	text-align: left;
+	background: url('../images/cover.jpg') no-repeat;
 	background-size: cover;
 	background-position: 20%;
 	z-index: 0;
 	& > h1 {
 		color: @white;
-		margin: 120px 0 10px 0;
+		margin: 200px 0 5px 20px;
+		display: inline-block;
+		background: rgba(0, 0, 0, 0.6);
+		padding: 3px 10px;
 	}
 	& > h3 {
 		color: @grey-light;
-		margin: 10px 0;
+		margin: 0 0 0 20px;
+		display: inline-block;
+		background: rgba(0, 0, 0, 0.6);
+		padding: 4px 8px 3px 8px;
 	}
 }
 
@@ -68,8 +75,8 @@ h3 {
 		transition: border .15s ease, color .15s ease;
 		will-change: border, color;
 		&:active, &.active, &:focus, &:hover {
-			border-bottom-color: @blue;
-			color: @blue;
+			border-bottom-color: #7dc855;
+			color: #7dc855;
 		}
 	}
 	&.stick-it {
